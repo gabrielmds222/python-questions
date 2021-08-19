@@ -170,30 +170,30 @@
 
 #===============================================================================================================================================
 #===============================================================================================================================================
-num = []
-words = []
-qtdnum = int(input('Digite a quantidade de numeros que deseja incluir:'))
-qtdwords = int(input('Digite a quantidade de textos que deseja incluir:'))
+# num = []
+# words = []
+# qtdnum = int(input('Digite a quantidade de numeros que deseja incluir:'))
+# qtdwords = int(input('Digite a quantidade de textos que deseja incluir:'))
 
-def numeros():
-    for i in range(0,qtdnum):
-        digitenum = input('Digite um numero:')
-        num.append(digitenum)
+# def numeros():
+#     for i in range(0,qtdnum):
+#         digitenum = input('Digite um numero:')
+#         num.append(digitenum)
 
 
-def palavras():
-    for i in range(0,qtdwords):
-        digiteword = input('Digite um texto:')
-        words.append(digiteword)
+# def palavras():
+#     for i in range(0,qtdwords):
+#         digiteword = input('Digite um texto:')
+#         words.append(digiteword)
 
-numeros()
-palavras()
+# numeros()
+# palavras()
 
-print('Lista de numeros:')
-print(str(num).strip('[]'))
+# print('Lista de numeros:')
+# print(str(num).strip('[]'))
 
-print('Lista de textos:')
-print(str(words).strip('[]'))
+# print('Lista de textos:')
+# print(str(words).strip('[]'))
 
 
 #===============================================================================================================================================
@@ -214,3 +214,18 @@ print(str(words).strip('[]'))
 # primos(tot)
 
 # print('Os numeros primos sao: '+ str(tot))
+
+#===============================================================================================================================================
+#===============================================================================================================================================
+
+
+numA = float(input('Digite o numero A:'))
+numB = float(input('Digite o numero B:'))
+
+ad = numA + numB
+sub = numA - numB
+mult = numA * numB
+
+print(ad)
+print(sub)
+print(mult)
