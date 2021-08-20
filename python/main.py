@@ -217,15 +217,19 @@
 
 #===============================================================================================================================================
 #===============================================================================================================================================
+# import math
 
+# numA = float(input('Digite o numero A:'))
+# numB = float(input('Digite o numero B:'))
 
-numA = float(input('Digite o numero A:'))
-numB = float(input('Digite o numero B:'))
+# ad = numA + numB
+# sub = numA - numB
+# div = numA / numB
+# inteiro = math.floor(div)
+# resto = numA % numB
 
-ad = numA + numB
-sub = numA - numB
-mult = numA * numB
-
-print(ad)
-print(sub)
-print(mult)
+# print(str(numA)+ ' + '+ str(numB)+ ' = '+ str(ad))
+# print(str(numA)+ ' - '+ str(numB)+ ' = '+ str(sub))
+# print(str(numA)+ ' / '+ str(numB)+ ' = '+ str(div))
+# print(str(int(numA))+ ' // '+ str(int(numB))+ ' = '+ str(inteiro))
+# print(str(int(numA))+ ' % '+ str(int(numB))+ ' = '+ str(int(resto)))
