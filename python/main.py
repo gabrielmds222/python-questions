@@ -238,9 +238,62 @@
 #===============================================================================================================================================
 #===============================================================================================================================================
 
-import math
+# from math import log, sin, cos
 
-nx = int(input('x?'))
-ny = int(input('y?'))
-nz = int(input('z?'))
+# x = int(input('x?'))
+# y = int(input('y?'))
+# z = int(input('z?'))
 
+# raiz = ((x**2)+(y**2)+(z**2))**1/3
+
+# pot = int((x**y)+(y**z))
+
+# seno = sin((x**2+y**2))
+# cosseno = cos((y**2+z**2))
+# logaritmos = (log(x)+log(y)+log(z))**(x+y+z)
+
+
+# print('raiz cubica({}^2 + {}^2 + {}^2) = {}' .format(x,y,z,raiz))
+
+# print('{}^{} + {}^{} = {}' .format(x,y,y,z,pot))
+
+# print('sin({}^2+{}^2) + cos({}^2+{}^2) = {}'  .format(x,y,y,z,seno+cosseno))
+
+# print('log {} + log {} + log {} ^ ({} + {} + {}) = {}' .format(x,y,z,x,y,z,logaritmos))
+
+
+#===============================================================================================================================================
+#===============================================================================================================================================
+
+
+texto1 = str(input('Digite o texto A: '))
+texto2 = str(input('Digite o texto B: '))
+c1 = len(texto1)
+c2 = len(texto2)
+ultimo1 = texto1[c1-1]
+ultimo2 = texto2[c2-1]
+
+print('tamanho(A) - tamanho(B) = {}'.format(len(texto1)-len(texto2)))
+print('A + B = {}' .format(texto1+texto2))
+print('A contem B = {}' .format(texto2 in texto1))
+print('B contem A = {}' .format(texto1 in texto2))
+print('Primeira letra de A = {}' .format(texto1[0]))
+print('Primeira letra de B = {}' .format(texto2[0]))
+print('Ultima letra de A = {}' .format(ultimo1))
+print('Ultima letra de B = {}' .format(ultimo2))
+
+
+# A + B = testandotest
+# A + B = testandotest
+# A contem B = True
+# A contem B = True
+# B contem A = False
+# B contem A = False
+# Primeira letra de A = t
+# Primeira letra de A = t
+# Primeira letra de B = t
+# Primeira letra de B = t
+# Ultima letra de B = o
+# Ultima letra de A = o
+# Ultima letra de B = t
+# Ultima letra de B = t
