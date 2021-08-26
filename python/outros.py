@@ -44,3 +44,71 @@
 # julio de melo aguiar
 # melo _ marcio melo
 # aguiar de julio melo
+
+n1 = int(input('n1? '))
+n2 = int(input('n2? '))
+n3 = int(input('n3? '))
+
+# se os numeros forem diferentes
+
+if n2 > n1 > n3:
+    print('Maior: '+str(n2))
+    print('Menor: '+str(n3))
+    print('Meio: '+str(n1))
+elif n3 > n1 > n2:
+    print('Maior: '+str(n3))
+    print('Menor: '+str(n2))
+    print('Meio: '+str(n1))
+elif n1 > n2 > n3:
+    print('Maior: '+str(n1))
+    print('Menor: '+str(n3))
+    print('Meio: '+str(n2))
+elif n3 > n2 > n1:
+    print('Maior: '+str(n3))
+    print('Menor: '+str(n1))
+    print('Meio: '+str(n2))
+elif n1 > n3 > n2:
+    print('Maior: '+str(n1))
+    print('Menor: '+str(n2))
+    print('Meio: '+str(n3))
+elif n2 > n3 > n1:
+    print('Maior: '+str(n2))
+    print('Menor: '+str(n1))
+    print('Meio: '+str(n3))
+
+# Se os numeros forem iguais
+
+if n1 == n2 and n2 == n3:
+    print('todos sao iguais a {}' .format(n1))
+    
+# Se apenas 2 forem iguais
+
+if n1 == n2 and n1 != n3:
+    if n1 < n3:
+        print('Maior: {}' .format(n3))
+        print('Menores: {}' .format(n1))
+        print('nao ha elementos do meio')
+    elif n1 > n3:
+        print('Maiores: {}' .format(n1))
+        print('Menor: {}' .format(n3))
+        print('nao ha elementos do meio')
+        
+if n1 == n3 and n1 != n2:
+    if n1 < n2:
+        print('Maior: {}' .format(n2))
+        print('Menores: {}' .format(n1))
+        print('nao ha elementos do meio')
+    elif n1 > n2:
+        print('Maiores: {}' .format(n1))
+        print('Menor: {}' .format(n2))
+        print('nao ha elementos do meio')
+        
+if n3 == n2 and n1 != n2:
+    if n2 < n1:
+        print('Maior: {}' .format(n1))
+        print('Menores: {}' .format(n2))
+        print('nao ha elementos do meio')
+    elif n2 > n1:
+        print('Maiores: {}' .format(n2))
+        print('Menor: {}' .format(n1))
+        print('nao ha elementos do meio')

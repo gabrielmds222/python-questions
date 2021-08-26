@@ -285,9 +285,225 @@
 #===============================================================================================================================================
 #===============================================================================================================================================
 
-texto1 = str(input('Digite o texto A: '))
-# texto2 = str(input('Digite o texto B: '))
+# texto1 = str(input('Digite o texto A: '))
+# # texto2 = str(input('Digite o texto B: '))
 
-textdiv = len(texto1)/2
+# textdiv = len(texto1)/2
 
-print(texto1[2:])
+# print(texto1[2:])
+
+
+# Digite o texto A: uma_palavra_A
+
+# Digite o texto B: outro_texto_B
+
+# Texto A dividido em duas Partes: uma_pa e lavra_A
+
+# Texto B dividido em duas Partes: outro_ e texto_B
+
+# uma_pa + texto_B = uma_patexto_B
+
+# lavra_A + outro_ = lavra_Aoutro_
+
+# u + u + A + B = uuAB
+
+#===============================================================================================================================================
+#===============================================================================================================================================
+
+
+
+# p1 = input('Texto 1? ')
+# p2 = input('Texto 2? ')
+# p3 = input('Texto 3? ')
+
+
+# print('seguem os textos em ordem:')
+
+# # Todos diferentes
+
+# if p2 > p1 > p3:
+#     print('1o. '+str(p2))
+#     print('2o. '+str(p1))
+#     print('3o. '+str(p3))
+# elif p3 > p1 > p2:
+#     print('1o. '+str(p3))
+#     print('2o. '+str(p1))
+#     print('3o. '+str(p2))
+# elif p1 > p2 > p3:
+#     print('1o. '+str(p1))
+#     print('2o. '+str(p2))
+#     print('3o. '+str(p3))
+# elif p3 > p2 > p1:
+#     print('1o. '+str(p3))
+#     print('2o. '+str(p2))
+#     print('3o. '+str(p1))
+# elif p1 > p3 > p2:
+#     print('1o. '+str(p1))
+#     print('2o. '+str(p3))
+#     print('3o. '+str(p2))
+# elif p2 > p3 > p1:
+#     print('1o. '+str(p2))
+#     print('2o. '+str(p3))
+#     print('3o. '+str(p1))
+
+# # Todos iguais
+
+# if p1 == p2 and p2 == p3:
+#     print('1o. '+str(p1))
+#     print('2o. '+str(p2))
+#     print('3o. '+str(p3))
+
+
+# # Se dois forem iguais 
+
+# if p1 == p2 and p1 != p3:
+#     if p1 < p3:
+#         print('1o. '+str(p2))
+#         print('2o. '+str(p3))
+#         print('3o. '+str(p1))
+#     elif p1 > p3:
+#         print('1o. '+str(p1))
+#         print('2o. '+str(p2))
+#         print('3o. '+str(p3))
+        
+# if p1 == p3 and p1 != p2:
+#     if p1 < p2:
+#         print('1o. '+str(p2))
+#         print('2o. '+str(p3))
+#         print('3o. '+str(p1))
+#     elif p1 > p2:
+#         print('1o. '+str(p1))
+#         print('2o. '+str(p2))
+#         print('3o. '+str(p3))
+        
+# if p3 == p2 and p1 != p2:
+#     if p2 < p1:
+#         print('1o. '+str(p1))
+#         print('2o. '+str(p3))
+#         print('3o. '+str(p2))
+#     elif p2 > p1:
+#         print('1o. '+str(p2))
+#         print('2o. '+str(p1))
+#         print('3o. '+str(p3))  
+
+
+# # p1 é a maior
+# if p1 > p2 and p1 > p3:
+#     maior = p1
+#     if p2 > p3:
+#         meio = p2
+#         menor = p3
+#     elif p3 > p2:
+#         meio = p3
+#         menor = p2
+#     elif p3 == p2:
+#         meio = p3
+#         menor = p2
+
+# # p2 é a maior
+# if p2 > p1 and p2 > p3:
+#     maior = p2
+#     if p1 > p3:
+#         meio = p1
+#         menor = p3
+#     elif p3 > p1:
+#         meio = p3
+#         menor = p1
+#     elif p3 == p1:
+#         meio = p3
+#         menor = p1
+
+# # p3 é a maior
+# if p3 > p2 and p3 > p1:
+#     maior = p3
+#     if p2 > p1:
+#         meio = p2
+#         menor = p1
+#     elif p1 > p2:
+#         meio = p1
+#         menor = p2
+#     elif p1 == p2:
+#         meio = p1
+#         menor = p2
+
+# if p1 == p2 == p3:
+#     maior = p1
+#     meio = p2
+#     menor = p3
+# print('1o. {}' .format(menor))
+# print('2o. {}' .format(meio))
+# print('3o. {}' .format(maior))
+
+
+
+#===============================================================================================================================================
+#===============================================================================================================================================
+
+
+ndias = int(input('Qual o numero de dias? '))
+dia = 0
+
+# Menos de uma semana
+
+if ndias == 0:
+    print('{} dias equivale a nenhum dia.' .format(ndias))
+
+
+elif ndias > 0 and ndias < 7:
+    print('{} dias equivalem a 0 semana e {} dias!' . format(ndias, ndias))
+
+
+# Uma semana
+
+elif ndias == 7:
+    print('{} dias equivalem a 1 semana!' .format(ndias))
+
+
+elif ndias > 7 and ndias < 14:
+    dia = ndias - 7
+    if dia > 1:
+        print('{} dias equivalem a 1 semana e {} dias!' .format(ndias, dia))
+    else:
+        print('{} dias equivalem a 1 semana e {} dia!' .format(ndias, dia))
+
+
+# Duas semanas
+
+elif ndias == 14:
+    print('{} dias equivalem a 2 semanas!' .format(ndias))
+
+
+elif ndias > 14 and ndias < 21:
+    dia = ndias - 14
+    if dia > 1:
+        print('{} dias equivalem a 2 semanas e {} dias!' .format(ndias, dia))
+    else:
+        print('{} dias equivalem a 2 semanas e {} dia!' .format(ndias, dia))
+
+
+# Três semanas
+
+elif ndias == 21:
+    print('{} dias equivalem a 3 semanas!' .format(ndias))
+
+
+elif ndias > 21 and ndias < 28:
+    dia = ndias - 21
+    if dia > 1:
+        print('{} dias equivalem a 3 semanas e {} dias!' .format(ndias, dia))
+    else:
+        print('{} dias equivalem a 3 semanas e {} dia!' .format(ndias, dia))
+
+
+# Quatro semanas
+
+elif ndias == 28:
+    print('{} dias equivalem a 4 semanas!' .format(ndias))
+
+
+elif ndias > 28:
+    dia = ndias - 28
+    if dia > 1:
+        print('{} dias equivalem a 4 semanas e {} dias!' .format(ndias, dia))
+    else:
+        print('{} dias equivalem a 4 semanas e {} dia!' .format(ndias, dia))
