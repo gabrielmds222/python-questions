@@ -387,7 +387,7 @@
 #         print('3o. '+str(p3))  
 
 
-# # p1 é a maior
+# p1 é a maior
 # if p1 > p2 and p1 > p3:
 #     maior = p1
 #     if p2 > p3:
@@ -440,70 +440,143 @@
 #===============================================================================================================================================
 
 
-ndias = int(input('Qual o numero de dias? '))
-dia = 0
+# ndias = int(input('Qual o numero de dias? '))
+# dia = 0
 
-# Menos de uma semana
+# # Menos de uma semana
 
-if ndias == 0:
-    print('{} dias equivale a nenhum dia.' .format(ndias))
-
-
-elif ndias > 0 and ndias < 7:
-    print('{} dias equivalem a 0 semana e {} dias!' . format(ndias, ndias))
+# if ndias == 0:
+#     print('{} dias equivale a nenhum dia.' .format(ndias))
 
 
-# Uma semana
-
-elif ndias == 7:
-    print('{} dias equivalem a 1 semana!' .format(ndias))
+# elif ndias > 0 and ndias < 7:
+#     print('{} dias equivalem a 0 semana e {} dias!' . format(ndias, ndias))
 
 
-elif ndias > 7 and ndias < 14:
-    dia = ndias - 7
-    if dia > 1:
-        print('{} dias equivalem a 1 semana e {} dias!' .format(ndias, dia))
-    else:
-        print('{} dias equivalem a 1 semana e {} dia!' .format(ndias, dia))
+# # Uma semana
+
+# elif ndias == 7:
+#     print('{} dias equivalem a 1 semana!' .format(ndias))
 
 
-# Duas semanas
-
-elif ndias == 14:
-    print('{} dias equivalem a 2 semanas!' .format(ndias))
-
-
-elif ndias > 14 and ndias < 21:
-    dia = ndias - 14
-    if dia > 1:
-        print('{} dias equivalem a 2 semanas e {} dias!' .format(ndias, dia))
-    else:
-        print('{} dias equivalem a 2 semanas e {} dia!' .format(ndias, dia))
+# elif ndias > 7 and ndias < 14:
+#     dia = ndias - 7
+#     if dia > 1:
+#         print('{} dias equivalem a 1 semana e {} dias!' .format(ndias, dia))
+#     else:
+#         print('{} dias equivalem a 1 semana e {} dia!' .format(ndias, dia))
 
 
-# Três semanas
+# # Duas semanas
 
-elif ndias == 21:
-    print('{} dias equivalem a 3 semanas!' .format(ndias))
-
-
-elif ndias > 21 and ndias < 28:
-    dia = ndias - 21
-    if dia > 1:
-        print('{} dias equivalem a 3 semanas e {} dias!' .format(ndias, dia))
-    else:
-        print('{} dias equivalem a 3 semanas e {} dia!' .format(ndias, dia))
+# elif ndias == 14:
+#     print('{} dias equivalem a 2 semanas!' .format(ndias))
 
 
-# Quatro semanas
+# elif ndias > 14 and ndias < 21:
+#     dia = ndias - 14
+#     if dia > 1:
+#         print('{} dias equivalem a 2 semanas e {} dias!' .format(ndias, dia))
+#     else:
+#         print('{} dias equivalem a 2 semanas e {} dia!' .format(ndias, dia))
 
-elif ndias == 28:
-    print('{} dias equivalem a 4 semanas!' .format(ndias))
+
+# # Três semanas
+
+# elif ndias == 21:
+#     print('{} dias equivalem a 3 semanas!' .format(ndias))
 
 
-elif ndias > 28:
-    dia = ndias - 28
-    if dia > 1:
-        print('{} dias equivalem a 4 semanas e {} dias!' .format(ndias, dia))
-    else:
-        print('{} dias equivalem a 4 semanas e {} dia!' .format(ndias, dia))
+# elif ndias > 21 and ndias < 28:
+#     dia = ndias - 21
+#     if dia > 1:
+#         print('{} dias equivalem a 3 semanas e {} dias!' .format(ndias, dia))
+#     else:
+#         print('{} dias equivalem a 3 semanas e {} dia!' .format(ndias, dia))
+
+
+# # Quatro semanas
+
+# elif ndias == 28:
+#     print('{} dias equivalem a 4 semanas!' .format(ndias))
+
+
+# elif ndias > 28:
+#     dia = ndias - 28
+#     if dia > 1:
+#         print('{} dias equivalem a 4 semanas e {} dias!' .format(ndias, dia))
+#     else:
+#         print('{} dias equivalem a 4 semanas e {} dia!' .format(ndias, dia))
+
+#===============================================================================================================================================
+#===============================================================================================================================================
+
+
+# n =int( input(""))
+# t1 = 1
+# t2 = 1
+
+# if n == 1:
+#     print(1)
+    
+# elif n == 2:
+#     print('{}, {}' .format(1,2))
+
+# else:
+#     print('{}, {}, ' .format(t1, t2), end='')
+#     cont = 2
+
+#     while cont < n:
+#         t3 = t1 + t2
+#         print("{}, ".format(t3), end='')
+#         t1 = t2
+#         t2 = t3
+#         cont += 1
+#     t3 = t1 + t2
+#     print("{}".format(t3), end='')
+
+#===============================================================================================================================================
+#===============================================================================================================================================
+
+
+# n = int(input("n?"))
+# n1 = 0
+# n2 = 0
+# n3 = 0
+
+# while n1 + n2 + n3 > n:
+#     n1 = n1 + 1
+#     n2 = n2 + 2
+#     n3 = n3 + 3
+#     mult = n1 * n2 * n3
+#     if mult == n:
+#         print("e triangular")
+#     else:
+#     	print("nao e triangular")
+
+
+# n = (input("Digite um numero"))
+# a=0
+# b=1
+# c=2
+# d=0
+# while d<n:
+#     a=a+1
+#     b=b+1
+#     c=c+1
+#     d=a*b*c
+# if d==n:
+#     print("Esse numero é triangular")
+# else:
+#     print("Esse numero nao é triangular")
+
+n = int(input("n?"))
+
+i = 1
+while i * (i+1) * (i+2) < n:
+    i = i + 1
+
+if i * (i+1) * (i+2) == n:
+    print("e triangular")
+else:
+    print("nao e triangular")
