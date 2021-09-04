@@ -594,3 +594,5 @@
 n = int(input('Quantos nomes?'))
 for i in range(1,n+1):
     nomes = input('')
+
+print('Voce digitou:')
