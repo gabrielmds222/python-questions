@@ -595,8 +595,9 @@ n = int(input('Quantos nomes?'))
 list = []
 for i in range(1,n+1):
     nomes = input('')
+    list.append(nomes)
 
 # for j in range(1,n):
 
     
-print('teste')
+print(str(list))
