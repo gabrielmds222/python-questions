@@ -608,24 +608,62 @@
 #===============================================================================================================================================
 
 
-n = int(input('Qual o N? '))
-print('Digite os valores: ')
+# n = int(input('Qual o N? '))
+# print('Digite os valores: ')
 
-lista = []
+# lista = []
 
-for i in range(1,n+1):
-    num = input('')
-    lista.append(num)
+# for i in range(1,n+1):
+#     num = input('')
+#     lista.append(num)
 
-op = int(input('Qual a op? '))
-a = int(input('Qual o A? '))
-b = int(input('Qual o B? '))
+# op = int(input('Qual a op? '))
+# a = int(input('Qual o A? '))
+# b = int(input('Qual o B? '))
 
 
-if op == 0:
+# if op == 0:
     
-    print('{} + {} = {}' .format(int(lista[a-1]), int(lista[b-1]), int(lista[a-1]) + int(lista[b-1])))
-elif op == 1:
+#     print('{} + {} = {}' .format(int(lista[a-1]), int(lista[b-1]), int(lista[a-1]) + int(lista[b-1])))
+# elif op == 1:
     
-     print('{} * {} = {}' .format(int(lista[a-1]), int(lista[b-1]), int(lista[a-1]) * int(lista[b-1])))
+#      print('{} * {} = {}' .format(int(lista[a-1]), int(lista[b-1]), int(lista[a-1]) * int(lista[b-1])))
+
+#===============================================================================================================================================
+#===============================================================================================================================================
+
+
+# qtalunos = int(input('Quantos alunos?'))
+# print('Digite os nomes dos alunos:')
+
+# lista = []
+# aux = 0
+
+# for i in range(1,qtalunos+1):
+#     alunos = input('')
+#     lista.append(alunos)
+
+# print('Nova lista:')
+
+# primeiro = 1
+
+# if len(lista)%2 == 0:
+#     ultimo = len(lista) - 1
+# else:
+#     ultimo = len(lista) - 2
+
+# while primeiro < ultimo:
+#      aux = lista[primeiro]
+#      lista[primeiro] = lista[ultimo]
+#      lista[ultimo] = aux
+
+#      primeiro = primeiro + 2
+#      ultimo = ultimo - 2
+
+# for j in (lista):
+#     print(j)
+
+#===============================================================================================================================================
+#===============================================================================================================================================
+
 
