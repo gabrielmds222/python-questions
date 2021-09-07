@@ -591,16 +591,41 @@
 #===============================================================================================================================================
 #===============================================================================================================================================
 
-n = int(input('Quantos nomes?'))
-list = []
-j = 0
+# n = int(input('Quantos nomes?'))
+# list = []
+# j = 0
+
+# for i in range(1,n+1):
+#     nomes = input('')
+#     list.append(nomes)
+
+# print('Voce digitou:')
+
+# for j in reversed(list):
+#     print(j)
+    
+#===============================================================================================================================================
+#===============================================================================================================================================
+
+
+n = int(input('Qual o N? '))
+print('Digite os valores: ')
+
+lista = []
 
 for i in range(1,n+1):
-    nomes = input('')
-    list.append(nomes)
+    num = input('')
+    lista.append(num)
 
-print('Voce digitou:')
+op = int(input('Qual a op? '))
+a = int(input('Qual o A? '))
+b = int(input('Qual o B? '))
 
-for j in reversed(list):
-    print(j)
+
+if op == 0:
     
+    print('{} + {} = {}' .format(int(lista[a-1]), int(lista[b-1]), int(lista[a-1]) + int(lista[b-1])))
+elif op == 1:
+    
+     print('{} * {} = {}' .format(int(lista[a-1]), int(lista[b-1]), int(lista[a-1]) * int(lista[b-1])))
+
