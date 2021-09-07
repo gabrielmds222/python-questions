@@ -593,11 +593,14 @@
 
 n = int(input('Quantos nomes?'))
 list = []
+j = 0
+
 for i in range(1,n+1):
     nomes = input('')
     list.append(nomes)
 
-# for j in range(1,n):
+print('Voce digitou:')
 
+for j in reversed(list):
+    print(j)
     
-print(str(list))
