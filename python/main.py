@@ -689,6 +689,6 @@ n = int(input('Qual o valor de N?'))
 print('Digite os valores:')
 
 for i in range(1, n+1):
-    val = int(input(''))
+    valor = int(input(''))
 
-print(val)
+print(valor)
