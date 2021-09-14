@@ -667,43 +667,60 @@
 #===============================================================================================================================================
 
 
-texto = input('Digite o texto:')
-aux = ''
-tam = len(texto)
+# texto = input('Digite o texto:').lower()
+# aux = ''
+# tam = len(texto)
 
-def cripto(aux):
-
-        if texto[i] >= 'a' and texto[i] <= 'e':
-            aux = aux + '1'
+# def cripto(aux):
+#     for i in range(0, tam):
+#         if texto[i] >= 'a' and texto[i] <= 'e':
+#             aux = aux + '1'
         
-        elif texto[i] >= 'f' and texto[i] <= 'j':
-            aux = aux + '2'
+#         elif texto[i] >= 'f' and texto[i] <= 'j':
+#             aux = aux + '2'
 
-        elif texto[i] >= 'k' and texto[i] <= 'o':
-            aux = aux + '3'
+#         elif texto[i] >= 'k' and texto[i] <= 'o':
+#             aux = aux + '3'
 
-        elif texto[i] >= 'p' and texto[i] <= 'z':
-            aux = aux + '4'
+#         elif texto[i] >= 'p' and texto[i] <= 'z':
+#             aux = aux + '4'
 
-        else:
-            aux = aux + '5'
+#         else:
+#             aux = aux + '5'
 
-for i in range(0, tam):
-    cripto(aux)
-    
-print('Encriptado: {}' .format(aux))
+#     return aux
+
+# resultado = cripto(aux)
+
+# print('Encriptado: {}' .format(resultado))
 
 #===============================================================================================================================================
 #===============================================================================================================================================
 
-# def primos:
+def primos(num):
+  list = []
+  for i in range(1, num//2+1):
+    if num % i == 0: 
+      list.append(i)
+  list.append(num)
+  return list
+      
+  
+dataSet = []
 
+n = int(input('Qual o valor de N?'))
 
-# n = int(input('Qual o valor de N?'))
+print('Digite os valores:')
 
-# print('Digite os valores:')
+for i in range (0, n):
+  num = int(input(''))
+  dataSet.append(num)
 
-# for i in range(1, n+1):
-#     valor = int(input(''))
-
-# print(i)
+print('A classificacao e:')
+for i in range (0, n):
+  num = dataSet[i]
+  divisores = primos(num)
+  if(len(divisores) == 2 and divisores == [1, num]):
+    print('{} e primo'.format(num))
+  else:
+    print('{} nao e primo, os divisores sao: {}'.format(num, primos(num)))
