@@ -667,16 +667,31 @@
 #===============================================================================================================================================
 
 
-# texto = input('Digite o texto:')
+texto = input('Digite o texto:')
+aux = ''
+tam = len(texto)
 
-# aux = len(texto)
+def cripto(aux):
 
-# for i in range(0, aux+1):
+        if texto[i] >= 'a' and texto[i] <= 'e':
+            aux = aux + '1'
+        
+        elif texto[i] >= 'f' and texto[i] <= 'j':
+            aux = aux + '2'
 
-#     if i >= 'a' and i <= 'e':
-#         i = 1
+        elif texto[i] >= 'k' and texto[i] <= 'o':
+            aux = aux + '3'
 
-# print(str(i))
+        elif texto[i] >= 'p' and texto[i] <= 'z':
+            aux = aux + '4'
+
+        else:
+            aux = aux + '5'
+
+for i in range(0, tam):
+    cripto(aux)
+    
+print('Encriptado: {}' .format(aux))
 
 #===============================================================================================================================================
 #===============================================================================================================================================
@@ -684,11 +699,11 @@
 # def primos:
 
 
-n = int(input('Qual o valor de N?'))
+# n = int(input('Qual o valor de N?'))
 
-print('Digite os valores:')
+# print('Digite os valores:')
 
-for i in range(1, n+1):
-    valor = int(input(''))
+# for i in range(1, n+1):
+#     valor = int(input(''))
 
-print(valor)
+# print(i)
